@@ -15,17 +15,43 @@ public class PizzaProblem {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int smallPizza = 15;
-		int mediumPizza = 20;
-		int largePizza = 25;
-		int pepperoniForSmall = 2;
-		int pepperoniForMediumLarge = 3;
-		int extraCheese = 1;
-		
-		String Pizza = "small";
-		
-		if(Pizza = ) {
-			System.out.println("The Price for Small pizza " + smallPizza);
+		int smallPizzaPrice = 15;
+		int mediumPizzaPrice = 20;
+		int largePizzaPrice = 25;
+		int pepperoniForSmallPrice = 2;
+		int pepperoniForMediumLargePrice = 3;
+		int extraCheesePrice = 1;
+		int finalBill;
+
+		String Pizza = "medium";
+
+		if (Pizza == "small") {
+			finalBill = (smallPizzaPrice + pepperoniForSmallPrice);
+			System.out.println("The Small pizza is for $" + finalBill);
+			if (Pizza == "small") {
+				finalBill = (smallPizzaPrice + pepperoniForSmallPrice + extraCheesePrice);
+				System.out.println("The small Pizza with Extra Cheese for $" + finalBill);
+			}
+		}
+
+		else if (Pizza == "medium") {
+			finalBill = (mediumPizzaPrice + pepperoniForMediumLargePrice);
+			System.out.println("The Medium Pizza with pepperoni is for $" + finalBill);
+			if (Pizza == "medium") {
+				finalBill = (mediumPizzaPrice + pepperoniForMediumLargePrice + extraCheesePrice);
+				System.out.println("The Medium Pizza with pepperoni with Extra Cheese is for $" + finalBill);
+			}
+
+		} else if (Pizza == "large") {
+
+			finalBill = (largePizzaPrice + pepperoniForMediumLargePrice);
+			System.out.println("The Large pizza with pepperoni is for $" + finalBill);
+			if (Pizza == "large") {
+				finalBill = (largePizzaPrice + pepperoniForMediumLargePrice + extraCheesePrice);
+				System.out.println("The Large Pizza with pepperoni with Extra Cheese is for $" + finalBill);
+			}
+		} else {
+			System.out.println("Pizza shop is closed");
 		}
 
 	}
