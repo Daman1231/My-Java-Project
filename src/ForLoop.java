@@ -9,7 +9,8 @@ public class ForLoop {
 		for (int drinktaken = 1; drinktaken <= maxCapacity; drinktaken++) {
 			System.out.println("Drunk a wiskey " + drinktaken + " time");
 			if (drinktaken == maxCapacity) {
-				System.out.println("Now you have reached the maximum drinking capacity");				
+				System.out.println("Now you have reached the maximum drinking capacity");
+				//break;
 			}
 
 		}
