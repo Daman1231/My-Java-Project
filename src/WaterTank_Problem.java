@@ -8,18 +8,28 @@ public class WaterTank_Problem {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int waterTankCapacity = 100;
-
-		for (int bucket = 10; bucket <= 200; bucket += 10) {
-			System.out.println("Water Tank filled with " + bucket + " bucket Capacity");
-			if (bucket >= waterTankCapacity) {
-				System.out.println("Water tank capacity reached");
-				if (bucket > waterTankCapacity) {
-					System.out.println("Water Tank OverFlowed");
-				}
-				break;
-			}
-		}
+//		int waterTankCapacity = 100;
+//		for (int bucket = 10; bucket <= 100; bucket += 10) {
+//			System.out.println("Water Tank filled with " + bucket + " bucket Capacity");
+//			if (bucket >= waterTankCapacity-10) {
+//				System.out.println("Water tank capacity reached");
+//				
+//			if (bucket > waterTankCapacity) {
+//					System.out.println("Water Tank OverFlowed");
+//			}
+//			break;	
+//			}
+			
+//		 if(bucket <= waterTankCapacity - 1) {
+//				System.out.println("Water Tank is not filled up to limit");
+		
+		
+		
+		
+		
+		
+//			}
+		
 
 	}
 

@@ -4,7 +4,7 @@ public class CalculatorWithSwitch {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		char operator = '*';
+		char operator = '/';
 		int num1 = 10;
 		int num2 = 2;
 

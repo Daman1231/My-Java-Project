@@ -5,7 +5,7 @@ public class Prime_OR_Not {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int inputVariable = 7; int count = 0;
+		int inputVariable = 13; int count = 0;
 		
 		for( int i = 1; i <= inputVariable; i++) {
 			if(inputVariable % i == 0) {
