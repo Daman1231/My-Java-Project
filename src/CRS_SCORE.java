@@ -82,8 +82,8 @@ public class CRS_SCORE {
 		return points;
 	}
 
-	double ielts(String modules) {
-		double ieltspoints = 0;
+	int ielts(String modules) {
+		int ieltspoints = 0;
 		if (modules.equals("listening")) {
 			ieltspoints = 8;
 		} else if (modules.equals("Speaking")) {
@@ -98,7 +98,7 @@ public class CRS_SCORE {
 	}
 
 	boolean study(boolean canadaStudy) {
-		boolean abroadStudy = false;
+		boolean abroadStudy = true;
 		if (canadaStudy = abroadStudy) {
 			abroadStudy = true;
 		} else if (canadaStudy != abroadStudy) {

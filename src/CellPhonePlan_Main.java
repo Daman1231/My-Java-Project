@@ -40,7 +40,8 @@ public class CellPhonePlan_Main {
 			if (selectBrand.equals("Apple")) {
 				System.out.println("You Have Selected Apple");
 
-				System.out.println("Please Enter Model \nIPhone 14 \nIphone 14 PRO \nIphone 14 Pro MAx \nIphone 14 Mini");
+				System.out
+						.println("Please Enter Model \nIPhone 14 \nIphone 14 PRO \nIphone 14 Pro MAx \nIphone 14 Mini");
 
 				model = sc.next();
 

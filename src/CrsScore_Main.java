@@ -30,36 +30,36 @@ public class CrsScore_Main {
 
 		System.out.println("Enter Your Ielts Score for Reading");
 		reading = sc.next();
-		double reading1 = crs.ielts(reading);
+		int reading1 = crs.ielts(reading);
 		System.out.println("Reading = " + reading);
 
 		System.out.println("Enter Your Ielts Score for Writing");
 		writing = sc.next();
-		double writing1 = crs.ielts(writing);
+		int writing1 = crs.ielts(writing);
 		System.out.println("Reading = " + writing);
 
 		System.out.println("Enter Your Ielts Score for Speaking");
 		speaking = sc.next();
-		double Speaking1 = crs.ielts(speaking);
+		int Speaking1 = crs.ielts(speaking);
 		System.out.println("Reading = " + speaking);
 
 		System.out.println("Enter Your Ielts Score for Listening");
 		listening = sc.next();
-		double listening1 = crs.ielts(listening);
+		int listening1 = crs.ielts(listening);
 		System.out.println("Reading = " + listening);
 
 		System.out.println("Have you studied in Canada for atleast 2 years (Y/N)");
 		study = sc.nextBoolean();
-		boolean abroadstudy = crs.study(true);
-		System.out.println("Y/N: " + study);
+		boolean abroadstudy = crs.study(false);
+		System.out.println("Y/N: " + abroadstudy);
 
 		System.out.println("Have you studied in Canada for atleast 2 years at NOC 0, A, B (Y/N)");
 		nocStudy = sc.hasNext();
-		boolean nocCategory = crs.inNOCCategory(nocStudy);
-		System.out.println("Y/N: " + nocStudy);
+		boolean nocCategory = crs.inNOCCategory(false);
+		System.out.println("Y/N: " + nocCategory);
 		
 		totalScore = (int) (educationScore + yearScore + reading1 + writing1 + listening1 + Speaking1);
-		System.out.println("Total Points you have scored" + totalScore);
+		System.out.println("Total Points you have scored " + totalScore);
 		if(true) {
 			System.out.println("You qualify to submit an Expression of Interest (EOI) to Immigration Canada");
 		}
