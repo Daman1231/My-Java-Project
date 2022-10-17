@@ -3,7 +3,7 @@ public class CellPhone_Plans {
 	int selectedModelPrice = 0;
 
 	String selectionOfOS(String os) {
-		String operatingSystem = null;
+		String operatingSystem = " ";
 		if (os.equals("IOS")) {
 			operatingSystem = "IOS";
 		}

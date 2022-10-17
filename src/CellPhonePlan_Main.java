@@ -41,7 +41,7 @@ public class CellPhonePlan_Main {
 				System.out.println("You Have Selected Apple");
 
 				System.out
-						.println("Please Enter Model \nIPhone 14 \nIphone 14 PRO \nIphone 14 Pro MAx \nIphone 14 Mini");
+						.println("Please Enter Model \nIPhone_14 \nIphone_14_PRO \nIphone_14_Pro_MAx \nIphone_14_Mini");
 
 				model = sc.next();
 
@@ -66,7 +66,7 @@ public class CellPhonePlan_Main {
 			if (selectBrandAndroid.equals("Samsung")) {
 				System.out.println("You Have Selected Samsung");
 
-				System.out.println("Please Enter Model \nS22 \nS22+ \nS22 ULTRA \nS22 Fe");
+				System.out.println("Please Enter Model \nS22 \nS22+ \nS22_ULTRA \nS22 Fe");
 
 				modelAndroid = sc.next();
 				int priceForSelectedAndroidModel = cpp.selectionOfProduct(selectBrandAndroid, modelAndroid);

@@ -57,10 +57,10 @@ public class CrsScore_Main {
 		nocStudy = sc.hasNext();
 		boolean nocCategory = crs.inNOCCategory(false);
 		System.out.println("Y/N: " + nocCategory);
-		
+
 		totalScore = (int) (educationScore + yearScore + reading1 + writing1 + listening1 + Speaking1);
 		System.out.println("Total Points you have scored " + totalScore);
-		if(true) {
+		if (true) {
 			System.out.println("You qualify to submit an Expression of Interest (EOI) to Immigration Canada");
 		}
 	}
