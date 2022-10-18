@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Library_Main {
@@ -21,12 +22,25 @@ public class Library_Main {
 				macbeth, harrypotter1, malgudyDays, alchemist };
 		Scanner sc = new Scanner(System.in);
 		int bookCount = 0;
-		boolean alreadyIssued = false;
+		boolean issueBook = false;
+
 		do {
 			System.out.println("Which book you want to be issued");
 			String requiredBookName = sc.nextLine();
 			System.out.println("Who is the author");
 			String bookAuthor = sc.nextLine();
+
+			// book already issued...
+			BookDetails[] bookDetails1 = { romeoAndJuliet, peaceOfMind, homeBody, twoStates, halfGirlfriend,
+					oliverTwist, macbeth, harrypotter1, malgudyDays, alchemist };
+			
+			for (int b = 0; b < bookDetails.length; b++) {
+				issueBook = Arrays.equals(bookDetails, bookDetails1);
+				if (bookDetails[b] != bookDetails1[b]) {
+					System.out.println(issueBook + " are already issued");
+
+				}
+			}
 
 			// iterating over the array
 			for (int i = 0; i < bookDetails.length; i++) {
@@ -38,9 +52,9 @@ public class Library_Main {
 					break;
 				}
 
-				//if (!alreadyIssued == (bookDetails[i].isBookIssued)) {
+				// if (!alreadyIssued == (bookDetails[i].isBookIssued)) {
 				//
-				//System.out.println(" is already issued");
+				// System.out.println(" is already issued");
 				//
 
 				// Code for book already issued....
@@ -51,7 +65,7 @@ public class Library_Main {
 //					bookCount++;
 //					break;
 //				}
-						
+
 				// Code for Book is not available....
 				if ((requiredBookName != bookDetails[i].bookName) && (bookAuthor != bookDetails[i].authorName)
 						&& bookDetails[i].isBookIssued) {
@@ -66,4 +80,3 @@ public class Library_Main {
 	}
 
 }
-
