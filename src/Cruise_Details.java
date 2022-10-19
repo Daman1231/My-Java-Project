@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Cruise_Details {
 
@@ -47,9 +48,10 @@ public class Cruise_Details {
 		} else if (cruiseName.equals("Discovery_Cruise")) {
 			selectedCruisePriceChildren = 9.99;
 		} else if (cruiseName.equals("Mystery_Cruise")) {
-			selectedCruisePriceChildren = 12.99;
+			selectedCruisePriceChildren = 13.99;
 		}
 
 		return selectedCruisePriceChildren;
 	}
+
 }
