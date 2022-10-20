@@ -5,6 +5,7 @@ public class Cruise_Details {
 	String cruiseName;
 	int no_Of_Days;
 	double selectedCruisePriceAdult = 0, selectedCruisePriceChildren = 0;
+	double dinnerPriceForAdult = 0, dinnerPriceForChildren = 0;;
 
 	public Cruise_Details(String nameOfCruise, int noOfTripDays) {
 		cruiseName = nameOfCruise;
@@ -53,5 +54,32 @@ public class Cruise_Details {
 
 		return selectedCruisePriceChildren;
 	}
+	
+	double priceOfDinnerBuffetAdults(String cruiseName) {
 
+		if (cruiseName.equals("Scenic_Cruise")) {
+			dinnerPriceForAdult = 20.99;
+		} else if (cruiseName.equals("Sunset_Cruise")) {
+			dinnerPriceForAdult = 20.99;
+		} else if (cruiseName.equals("Discovery_Cruise")) {
+			dinnerPriceForAdult = 20.99;
+		} else if (cruiseName.equals("Mystery_Cruise")) {
+			dinnerPriceForAdult = 20.99;
+		}
+		return dinnerPriceForAdult;
+	}
+
+	double priceOfDinnerBuffetChildren(String cruiseName) {
+		
+		if (cruiseName.equals("Scenic_Cruise")) {
+			dinnerPriceForChildren = 4.99;
+		} else if (cruiseName.equals("Sunset_Cruise")) {
+			dinnerPriceForChildren = 4.99;
+		} else if (cruiseName.equals("Discovery_Cruise")) {
+			dinnerPriceForChildren = 4.99;
+		} else if (cruiseName.equals("Mystery_Cruise")) {
+			dinnerPriceForChildren = 4.99;
+		}
+		return dinnerPriceForChildren;
+	}
 }
