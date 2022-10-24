@@ -88,7 +88,7 @@ public class Cruise_Company_Main {
 					System.out.println("Enter Number of Children");
 					int numberOfchildrenBuffet = sc.nextInt();
 
-					if (numberOfchildrenBuffet >= 1) {
+					if (numberOfchildrenBuffet > 1) {
 						buffetPriceAdult = numberOfchildrenBuffet * buffetPriceChildren;
 						System.out.println("Buffet Special Price Children " + buffetPriceChildren);
 					}
@@ -100,7 +100,7 @@ public class Cruise_Company_Main {
 			}
 			break;
 		}
-
+		System.out.println("Your Package Includes: ");
 		totalPrice = adults + children + buffetPriceAdult + buffetPriceChildren;
 		System.out.println("Total Price $" + totalPrice);
 		hst = totalPrice * 0.15;

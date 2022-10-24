@@ -4,12 +4,14 @@ public class Cruise_Details {
 
 	String cruiseName;
 	int no_Of_Days;
+	int numDay;
 	double selectedCruisePriceAdult = 0, selectedCruisePriceChildren = 0;
 	double dinnerPriceForAdult = 0, dinnerPriceForChildren = 0;;
 
 	public Cruise_Details(String nameOfCruise, int noOfTripDays) {
 		cruiseName = nameOfCruise;
 		no_Of_Days = noOfTripDays;
+		
 	}
 
 //	int noOFDays(String cruise_Days) {
