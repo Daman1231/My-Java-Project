@@ -29,6 +29,8 @@ public class Cruise_Details {
 //
 //	}
 
+	
+
 	double priceOfCruiseAdult(String cruiseName) {
 		if (cruiseName.equals("Scenic_Cruise")) {
 			selectedCruisePriceAdult = 43.99;

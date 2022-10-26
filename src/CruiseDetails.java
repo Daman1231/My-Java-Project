@@ -1,4 +1,5 @@
 import java.text.DecimalFormat;
+import java.util.Scanner;
 
 public class CruiseDetails {
 	String cruiseSelection;
@@ -15,6 +16,7 @@ public class CruiseDetails {
 		priceForAdult = adultPrice;
 		priceForchildren = childrenPrice;
 		numDay = numOfDay;
+
 	}
 
 	void setbuffetPrice(String buffetMeal) {

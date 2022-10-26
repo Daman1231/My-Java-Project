@@ -10,15 +10,12 @@ public class LibraryGetSet {
 	}
 
 	public void updateBooks(String updateBook, String libraryPerson) {
-		if (updateBook.equalsIgnoreCase(booksIssue)) {
-			booksIssue = updateBook;
-
-		}
+		booksIssue = updateBook;
 
 	}
 
 	void getBooks() {
-		System.out.println("Updated Book by daman is  " + booksIssue);
+		System.out.println("Updated Book by " + librarian + " is  " + booksIssue);
 
 	}
 

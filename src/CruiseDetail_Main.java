@@ -9,6 +9,30 @@ public class CruiseDetail_Main {
 		String again;
 		String cruiseSelec;
 		int index = 0;
+
+		CruiseDetail_SignUp cruiseDetail_SignUp = new CruiseDetail_SignUp("daman.singh00786@gmail.com", 1234,
+				"Daman_Preet_Singh", "6474020546", "Daman", 1100);
+		System.out.println("Welcome to Cruise Booking.");
+		System.out.println("Please sign up to book a cruise.");
+
+		cruiseDetail_SignUp.getEmailId();
+
+		cruiseDetail_SignUp.getName();
+		cruiseDetail_SignUp.updateUsername("Daman_Preet_Singh", "Daman");
+		String updatedUsername = cruiseDetail_SignUp.getUpdatedUsername();
+		System.out.println(updatedUsername);
+
+		cruiseDetail_SignUp.getPassword();
+		cruiseDetail_SignUp.updatePassword(1234, 1100);
+		int updatedPassword = cruiseDetail_SignUp.getUpdatedPassword();
+		System.out.println(updatedPassword);
+
+		cruiseDetail_SignUp.getNumber();
+
+		System.out.println("Thank you for registering!");
+
+		cruiseDetail_SignUp.getEnterUserName();
+		cruiseDetail_SignUp.getEnterPassword();
 		CruiseDetails scenicCruise = new CruiseDetails("Scenic Cruise", 43.99, 12.99, 3);
 		CruiseDetails sunsetCruise = new CruiseDetails("Sunset Cruise", 52.99, 15.99, 1);
 		CruiseDetails discoveryCruise = new CruiseDetails("Discovery Cruise", 39.99, 9.99, 4);
