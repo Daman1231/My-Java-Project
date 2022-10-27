@@ -7,6 +7,7 @@ public class CruiseDetail_SignUp {
 	String number;
 	String userName;
 	int userPassword;
+	int countTry = 0;
 
 	public CruiseDetail_SignUp(String email, int requiredPassword, String fullName, String phoneNumber, String user,
 			int pass) {
@@ -18,15 +19,20 @@ public class CruiseDetail_SignUp {
 		pass = userPassword;
 	}
 
-	public String getEmailId() {
+	public void setEmailId(String email) {
+
+		if (email.equals(emailId)) {
+			System.out.println("Valid Email");
+		} else {
+			System.out.println("Invalid Email");
+		}
+	}
+
+	public void getEmailId() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter Your Email Address.");
 		emailId = sc.next();
-		return emailId;
-	}
 
-	public void setEmailId(String emailId) {
-		this.emailId = emailId;
 	}
 
 	public String getName() {
@@ -102,18 +108,14 @@ public class CruiseDetail_SignUp {
 
 	}
 
-	public String setEnterUsername(String username) {
-		if (username.equalsIgnoreCase(getUpdatedUsername())) {
-			if (username.equalsIgnoreCase(name)) {
-				System.out.println("Valid User");
-			} else {
-				System.out.println("Invalid User");
-			}
+	public void setEnterUsername(String username) {
+
+		if (userName.equals(name)) {
+			System.out.println("Valid User");
 		} else {
-			System.out.println("Old UserName Not Accepted");
+			System.out.println("Invalid User");
 		}
 
-		return username;
 	}
 
 	public void getEnterUserName() {
@@ -122,25 +124,38 @@ public class CruiseDetail_SignUp {
 		userName = sc.next();
 	}
 
-	public int setEnterUserPassword(int password) {
+	public void setEnterUserPassword(int pass) {
 
-		if (password == getUpdatedPassword()) {
-			if (this.password == password) {
-				System.out.println("Valid User");
-			} else {
-				System.out.println("Invalid User");
-			}
-
+		if (pass == password) {
+			System.out.println("Valid Password");
 		} else {
-			System.out.println("Old Password Not Accepted");
+			System.out.println("Invalid Password");
 		}
-		return password;
+	}
+
+	public String validateUserName(String enteredUserName) {
+		if (this.name.equalsIgnoreCase(enteredUserName)) {
+
+		}
+		return enteredUserName;
 	}
 
 	public void getEnterPassword() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter Pasword ");
 		password = sc.nextInt();
+	}
+
+	public void changePassword(int currentPass, int newPassword) {
+		if (this.password == currentPass) {
+			currentPass = newPassword;
+		} else {
+			System.out.println("Wrong Password");
+		}
+	}
+
+	public int getChangePassword() {
+		return password;
 	}
 
 }

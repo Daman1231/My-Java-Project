@@ -7,6 +7,7 @@ public class CruiseDetail_Main {
 		Scanner sc = new Scanner(System.in);
 
 		String again;
+		String continueSelection;
 		String cruiseSelec;
 		int index = 0;
 
@@ -16,6 +17,7 @@ public class CruiseDetail_Main {
 		System.out.println("Please sign up to book a cruise.");
 
 		cruiseDetail_SignUp.getEmailId();
+		cruiseDetail_SignUp.setEmailId("daman.singh00786@gmail.com");
 
 		cruiseDetail_SignUp.getName();
 		cruiseDetail_SignUp.updateUsername("Daman_Preet_Singh", "Daman");
@@ -31,8 +33,13 @@ public class CruiseDetail_Main {
 
 		System.out.println("Thank you for registering!");
 
-		cruiseDetail_SignUp.getEnterUserName();
-		cruiseDetail_SignUp.getEnterPassword();
+		do {
+			cruiseDetail_SignUp.getEnterUserName();
+			cruiseDetail_SignUp.setEnterUsername(updatedUsername);
+			cruiseDetail_SignUp.getEnterPassword();
+			cruiseDetail_SignUp.setEnterUserPassword(updatedPassword);
+		} while ((!updatedUsername.equals(updatedUsername)) && ((updatedPassword != updatedPassword)));
+
 		CruiseDetails scenicCruise = new CruiseDetails("Scenic Cruise", 43.99, 12.99, 3);
 		CruiseDetails sunsetCruise = new CruiseDetails("Sunset Cruise", 52.99, 15.99, 1);
 		CruiseDetails discoveryCruise = new CruiseDetails("Discovery Cruise", 39.99, 9.99, 4);
@@ -101,6 +108,15 @@ public class CruiseDetail_Main {
 		String buffetMeal = sc.next();
 		cruiseDetails[index].setbuffetPrice(buffetMeal);
 		cruiseDetails[index].output(numAdults, ageAboveFive);
+
+		do {
+			System.out.println(
+					"Do you want to change your personal information. Press Y to change. Press any other alphabet to exit.");
+			continueSelection = sc.nextLine();
+		} while (!continueSelection.equalsIgnoreCase("Y"));
+
+		int chnangeExistingPassword = cruiseDetail_SignUp.getChangePassword();
+		System.out.println("Updated Password is: " + chnangeExistingPassword);
 
 	}
 
