@@ -68,7 +68,7 @@ public class Simulation {
 
 			} else {
 				System.out.println("Launch and Land Unsuccesfull");
-				rocketCount += 2; //  if rocket launch fails then relaunch and add 1 more rocket cost...
+				rocketCount += 2;
 			}
 
 		}
